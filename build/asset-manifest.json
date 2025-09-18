@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shipStation/static/css/main.4b0ca220.css",
+    "main.js": "/shipStation/static/js/main.112a822c.js",
+    "index.html": "/shipStation/index.html",
+    "main.4b0ca220.css.map": "/shipStation/static/css/main.4b0ca220.css.map",
+    "main.112a822c.js.map": "/shipStation/static/js/main.112a822c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b0ca220.css",
+    "static/js/main.112a822c.js"
+  ]
+}

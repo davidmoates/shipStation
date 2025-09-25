@@ -77,14 +77,14 @@ const addressDatabase = [
 ];
 
 export const searchAddresses = (searchTerm) => {
-  if (!searchTerm || searchTerm.length < 2) {
+  if (!searchTerm || searchTerm.length < 1) {
     return [];
   }
   
   const normalizedSearch = searchTerm.toLowerCase().trim();
   
   return addressDatabase.filter(address => 
-    address.searchKey.includes(normalizedSearch) ||
+    address.searchKey.toLowerCase().includes(normalizedSearch) ||
     address.contactName.toLowerCase().includes(normalizedSearch) ||
     address.company.toLowerCase().includes(normalizedSearch)
   );

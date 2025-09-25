@@ -115,7 +115,7 @@ function App() {
       )}
 
       <div className="form-section">
-        <h3>Search Recipients</h3>
+        <h3>Search by Contract Number</h3>
         <AddressSearch onAddressSelect={handleAddressSelect} />
       </div>
 

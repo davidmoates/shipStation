@@ -16,7 +16,7 @@ const AddressSearch = ({ onAddressSelect }) => {
     const value = e.target.value;
     setSearchTerm(value);
     
-    if (value.length >= 2) {
+    if (value.length >= 1) {
       const results = searchAddresses(value);
       setSearchResults(results);
       setShowDropdown(results.length > 0);
@@ -27,7 +27,7 @@ const AddressSearch = ({ onAddressSelect }) => {
   };
 
   const handleAddressSelect = (address) => {
-    setSearchTerm(`${address.contactName} - ${address.company}`);
+    setSearchTerm(`${address.searchKey} - ${address.contactName}`);
     setShowDropdown(false);
     onAddressSelect(address);
   };
@@ -54,7 +54,7 @@ const AddressSearch = ({ onAddressSelect }) => {
       <input
         type="text"
         className="search-input"
-        placeholder="Search for recipient (name or company)..."
+        placeholder="Search by contract number (e.g. S14401.A01)..."
         value={searchTerm}
         onChange={handleInputChange}
         onKeyPress={handleKeyPress}
@@ -75,7 +75,7 @@ const AddressSearch = ({ onAddressSelect }) => {
                 className="dropdown-item"
                 onClick={() => handleAddressSelect(address)}
               >
-                <strong>{address.contactName}</strong> - {address.company}
+                <strong>{address.searchKey}</strong> - {address.contactName} - {address.company}
                 <br />
                 <small>{address.addressLine1}, {address.city}, {address.stateOrProvinceCode}</small>
               </div>

@@ -1,7 +1,7 @@
 const addressDatabase = [
   {
     id: 1,
-    searchKey: 'john doe',
+    searchKey: 'S14401.A01',
     contactName: 'John Doe',
     company: 'Acme Corp',
     phoneNumber: '555-0123',
@@ -16,7 +16,7 @@ const addressDatabase = [
   },
   {
     id: 2,
-    searchKey: 'jane smith',
+    searchKey: 'S50550.Q01',
     contactName: 'Jane Smith',
     company: 'Tech Solutions Inc',
     phoneNumber: '555-0456',
@@ -31,7 +31,7 @@ const addressDatabase = [
   },
   {
     id: 3,
-    searchKey: 'mike johnson',
+    searchKey: 'S32021.B00',
     contactName: 'Mike Johnson',
     company: 'Global Enterprises',
     phoneNumber: '555-0789',
@@ -46,7 +46,7 @@ const addressDatabase = [
   },
   {
     id: 4,
-    searchKey: 'sarah wilson',
+    searchKey: 'S14432.G25',
     contactName: 'Sarah Wilson',
     company: 'Creative Studio',
     phoneNumber: '555-0321',
@@ -61,7 +61,7 @@ const addressDatabase = [
   },
   {
     id: 5,
-    searchKey: 'david brown',
+    searchKey: 'S55023.H03',
     contactName: 'David Brown',
     company: 'Manufacturing Co',
     phoneNumber: '555-0654',
